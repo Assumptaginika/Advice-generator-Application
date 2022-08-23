@@ -1,0 +1,120 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: hsl(218, 15%, 8%)
+}
+
+.container {
+    width: 375px;
+    height: 100vh;
+    /*border: 1px solid orange;*/
+    background-color: hsl(218, 23%, 16%);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 340px;
+    height: 400px;
+    align-items: center;
+    margin: auto;
+    background-color:hsl(217, 19%, 24%); 
+    border-radius: 10px;
+    padding: 8px;
+    position: relative;
+}
+.advice-id {
+    color: hsl(150, 100%, 66%);
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 4px;
+    padding-top: 30px;
+    text-transform: uppercase;
+}
+
+p {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+    line-height: 40px;
+    font-family: 'Manrope', sans-serif;
+    margin: 15px 5px;
+}
+.divider-mobile {
+    margin: auto;
+    display: block;
+    width: 100%;
+    appearance: none;
+    padding: 10px 10px;
+
+}
+.divider-desktop {
+    display: none;
+}
+
+.btn {
+    background-color: hsl(150, 100%, 66%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+    background-image: url("images/icon-dice.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    position: absolute;
+    bottom: -25px;
+    right: 50%;
+    margin: auto;
+    transform: translateX(50%);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+
+
+}
+.btn:hover {
+        box-shadow: 0px 10px 20px hsl(150, 100%, 66%);
+    }
+
+    /*moving over to the make it responsive*/
+
+    @media (min-width: 1440px) {
+        .container {
+            width: 100%;
+        }
+        .card {
+            width: 600px;
+            padding: 30px;
+            justify-content: center;
+        }
+        .advice {
+            font-weight: 700;
+            font-size: 30px;
+            padding-top: 15px;
+            padding-bottom: 12px;
+            line-height: 45px;
+
+        }
+        .divider-mobile {
+            display: none;
+        }
+        .divider-desktop {
+            display: block;
+            margin: auto;
+            width: 100%;
+            padding: 15px 30px 10px 30px;
+        }
+
+    }
+
+
+
